@@ -1,0 +1,81 @@
+body {
+  background-image: url("night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  /* min-width: 1360px; */
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  /* min-height: 250px; */
+  height: fit-content;
+}
+
+#section_1 {
+  padding-top: 60px;
+}
+
+.light_container {
+  border-style: solid;
+  border-color: pink;
+  border-width: 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 10px;
+}
+
+img {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: violet;
+  border-width: 1px;
+  margin: 2px 2px 2px 2px;
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (width<=576px) {
+  .light_container {
+    border-color: blue;
+    border-width: 1px;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (width<=768px) and (width>576px) {
+  .light_container {
+    border-width: 2px;
+    border-color: teal;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (width<=992px) and (width>768px) {
+  .light_container {
+    border-color: red;
+    border-width: 3px;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
